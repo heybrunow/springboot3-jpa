@@ -13,15 +13,19 @@ import com.projetoportifolio.demo.repositories.UserRepository;
 public class UserService {
 	
 	@Autowired
-	private UserRepository useRepository;
+	private UserRepository userRepository;
 	
 	public List<User>findAll(){
-		return useRepository.findAll();
+		return userRepository.findAll();
 	}
 	
 	public User findbyId(Long id) {
-		Optional<User> user  = useRepository.findById(id);
+		Optional<User> user  = userRepository.findById(id);
 		return user.get();
+	}
+	
+	public User insert(User user) {
+		return userRepository.save(user);
 	}
 
 }
