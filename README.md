@@ -29,6 +29,8 @@ Como executar o projeto:
  executar o projeto: 
  
  ./mvn3 spring-boot:run
+
+arquivo com collection postman junto ao projeto para executar quaisqueres testes que desejar!
  
  Autor: 
  
